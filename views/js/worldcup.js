@@ -81,3 +81,58 @@ function basket() {
     }
     document.getElementById("demo").innerHTML = txt;
   }
+
+  var subjectObject = {
+    "Group A": {
+      "Brazil x Saudi Arabia": ["€ 120.00"],
+      "Russia x Uruguay": ["€ 120.00"],
+      "Kit Pack A": ["€ 80.00"]    
+    },
+    "Group B": {
+      "Morocco x Qatar": ["€ 120.00"],
+      "Portugal x Spain": ["€ 120.00"],
+      "Kit Pack B": ["€ 80.00"] 
+    },
+    "Group C": {
+      "France x Autralia": ["€ 120.00"],
+      "Argentina x Iceland": ["€ 120.00"],
+      "Kit Pack C": ["€ 80.00"] 
+    },
+  "Group D": {
+    "Ireland x Denmark": ["€ 120.00"],
+    "Belgium x England": ["€ 120.00"],
+    "Kit Pack D": ["€ 80.00"] 
+  },
+  "Group E": {
+    "Costa Rica x Germany": ["€ 120.00"],
+    "Switzerland x Japan": ["€ 120.00"],
+    "Kit Pack E": ["€ 80.00"] 
+  }
+  
+  }
+  window.onload = function() {
+      var subjectSel = document.getElementById("subject");
+      var topicSel = document.getElementById("topic");
+      var chapterSel = document.getElementById("chapter");
+      for (var x in subjectObject) {
+        subjectSel.options[subjectSel.options.length] = new Option(x, x);
+      }
+      subjectSel.onchange = function() {
+        //empty Chapters- and Topics- dropdowns
+        chapterSel.length = 1;
+        topicSel.length = 1;
+        //display correct values
+        for (var y in subjectObject[this.value]) {
+          topicSel.options[topicSel.options.length] = new Option(y, y);
+        }
+      }
+      topicSel.onchange = function() {
+        //empty Chapters dropdown
+        chapterSel.length = 1;
+        //display correct values
+        var z = subjectObject[subjectSel.value][this.value];
+        for (var i = 0; i < z.length; i++) {
+          chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+        }
+      }
+    }
