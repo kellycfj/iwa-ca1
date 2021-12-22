@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<menu>
+  <section name="Group A">
+    <entry>
+      <matches>Brazil x Saudi Arabia</matches>
+      <price>120.0</price>
+    </entry>
+    <entry>
+      <matches>Russia x Uruguay</matches>
+      <price>120.0</price>
+    </entry>
+    <entry kitpack="true">
+      <matches>Kit Pack A</matches>
+      <price>80.0</price>
+    </entry>
+  </section>
+  <section name="Group B">
+    <entry>
+      <matches>Morocco x Qatar</matches>
+      <price>120.0</price>
+    </entry>
+    <entry>
+      <matches>Portugal x Spain</matches>
+      <price>120.0</price>
+    </entry>
+    <entry kitpack="true">
+      <matches>Kit Pack B</matches>
+      <price>80.0</price>
+    </entry>
+  </section>
+  <section name="Group C">
+    <entry>
+      <matches>France x Autralia</matches>
+      <price>120.0</price>
+    </entry>
+    <entry>
+      <matches>Argentina x Iceland</matches>
+      <price>120.0</price>
+    </entry>
+    <entry kitpack="true">
+      <matches>Kit Pack C</matches>
+      <price>80.0</price>
+    </entry>
+  </section>
+  <section name="Group D">
+    <entry>
+      <matches>Ireland x Denmark</matches>
+      <price>120.0</price>
+    </entry>
+    <entry>
+      <matches>Belgium x England</matches>
+      <price>120.0</price>
+    </entry>
+    <entry kitpack="true">
+      <matches>Kit Pack D</matches>
+      <price>80.0</price>
+    </entry>
+  </section>
+  <section name="Group E">
+    <entry>
+      <matches>Costa Rica x Germany</matches>
+      <price>120.0</price>
+    </entry>
+    <entry>
+      <matches>Switzerland x Japan</matches>
+      <price>120.0</price>
+    </entry>
+    <entry kitpack="true">
+      <matches>Kit Pack E</matches>
+      <price>80.0</price>
+    </entry>
+  </section>
+</menu>
