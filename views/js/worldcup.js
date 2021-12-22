@@ -70,9 +70,9 @@ window.addEventListener("load", function () {
 
 function basket() {
     var txt;
-    if (confirm("Complete purchase?")) {
+    if (confirm("Confirm Add to Basket?")) {
         
-      alert("Successfuly ordered!");
+      alert("Successfuly added!");
         
       document.getElementById("showKit").reset();
      
